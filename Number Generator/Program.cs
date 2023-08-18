@@ -1,8 +1,51 @@
 ﻿using System;
 using System.Text;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 
-internal class programm
+public class Color 
+{
+    public static ConsoleColor GetRandomConsoleColor()
+    {
+        //Das Dictionary mit den zufällig generierten Zahlen wurde durch ChatGPT erstellt
+
+            Dictionary<int, ConsoleColor> numberToColor = new Dictionary<int, ConsoleColor>
+            {
+            { 1, ConsoleColor.DarkBlue },
+            { 2, ConsoleColor.DarkGreen },
+            { 3, ConsoleColor.DarkCyan },
+            { 4, ConsoleColor.DarkRed },
+            { 5, ConsoleColor.DarkMagenta },
+            { 6, ConsoleColor.DarkYellow },
+            { 7, ConsoleColor.Gray },
+            { 8, ConsoleColor.DarkGray },
+            { 9, ConsoleColor.Blue },
+            { 10, ConsoleColor.Green },
+            { 11, ConsoleColor.Cyan },
+            { 12, ConsoleColor.Red },
+            { 13, ConsoleColor.Magenta },
+            { 14, ConsoleColor.Yellow },
+            { 15, ConsoleColor.White }
+            };
+
+            Random rnd = new Random();         
+            int randomColorNumber = rnd.Next(1, 15);
+
+            if (numberToColor.TryGetValue(randomColorNumber, out ConsoleColor selectedColor))
+            {
+                return selectedColor;
+            }
+            else
+            {
+            return ConsoleColor.White;
+            }
+    }
+}
+
+
+
+
+public class programm
 {
     public static void Main(string[] args)
     {
@@ -14,34 +57,68 @@ internal class programm
         Console.WriteLine("es wird eine Zahl zwischen " + rangeNumber1 + " und " + rangeNumber2 + " generiert");
 
         Random rnd = new Random();          //Random Zahl zum raten
-        int Geheimzahl = rnd.Next(1, 100);
+        int Geheimzahl = rnd.Next(rangeNumber1, rangeNumber2);
 
         Console.WriteLine("Gebe nun deinen ersten Rateversuch ab.");
 
         int guessNumber = Convert.ToInt32(Console.ReadLine());
 
-        Random rnd2 = new Random();         //Random Zahl um die Farbe zu verstellen
-        int Farbzahl = rnd.Next(1, 100);
+        bool Neger = true;
 
-        string[] cars = { "DarkBlue", "DarkGreen", "DarkCyan", "DarkRed", "DarkMagenta", "DarkYellow", "Gray", "DarkGrey", "Blue", "Green", "Cyan", "Red", "Magenta", "Yellow", "White" };
-        Console.WriteLine(cars[0]);
-
-        if (guessNumber > Geheimzahl)
+        while (Neger)
         {
-            Console.WriteLine("Die Geheimzahl ist ist kleiner als deine Zahl");
-            Console.ForegroundColor = ConsoleColor.Red;
 
-        }
-        else if (guessNumber < Geheimzahl)
-        {
-            Console.WriteLine("Die Geheimzahl ist ist grösser als deine Zahl");
+            if (guessNumber == Geheimzahl)
+            {
+                ConsoleColor randomColor = Color.GetRandomConsoleColor();
+                Console.ForegroundColor = randomColor;
 
-        }
-        else if (guessNumber == Geheimzahl)
-        {
-            Console.WriteLine("Du hast die Geheimzahl erraten!");
+                Console.WriteLine("Du hast die Geheimzahl erraten!");
 
+                Console.ResetColor();
+
+                Neger = false;
+            }
+            else 
+            {
+                if (guessNumber < Geheimzahl)
+                {
+                    ConsoleColor randomColor = Color.GetRandomConsoleColor();
+                    Console.ForegroundColor = randomColor;
+
+                    Console.WriteLine("Die Geheimzahl ist grösser als deine Zahl");
+
+                    Console.ResetColor();
+
+                    Neger = false;
+                }
+
+                else if (guessNumber > Geheimzahl)
+                {
+                    ConsoleColor randomColor = Color.GetRandomConsoleColor();
+                    Console.ForegroundColor = randomColor;
+
+                    Console.WriteLine("Die Geheimzahl ist kleiner als deine Zahl");
+
+                    Console.ResetColor();
+
+                    Neger = false;
+                }
+
+
+
+
+
+
+
+
+
+
+            }
+            
         }
+       
+        
     }
-
 }
+
