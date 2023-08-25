@@ -2,14 +2,15 @@
 using System.Text;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
-
-public class Color
+namespace Number_Generator
 {
-    public static ConsoleColor GetRandomConsoleColor()
+    public class Color
     {
-        //Das Dictionary mit den zufällig generierten Zahlen wurde durch ChatGPT erstellt
+        public static ConsoleColor GetRandomConsoleColor()
+        {
+            //Das Dictionary mit den zufällig generierten Zahlen wurde durch ChatGPT erstellt
 
-        Dictionary<int, ConsoleColor> numberToColor = new Dictionary<int, ConsoleColor>
+            Dictionary<int, ConsoleColor> numberToColor = new Dictionary<int, ConsoleColor>
             {
             { 1, ConsoleColor.DarkBlue },
             { 2, ConsoleColor.DarkGreen },
@@ -28,16 +29,17 @@ public class Color
             { 15, ConsoleColor.White }
             };
 
-        Random rnd = new Random();
-        int randomColorNumber = rnd.Next(1, 15);
+            Random rnd = new Random();
+            int randomColorNumber = rnd.Next(1, 15);
 
-        if (numberToColor.TryGetValue(randomColorNumber, out ConsoleColor selectedColor))
-        {
-            return selectedColor;
-        }
-        else
-        {
-            return ConsoleColor.White;
+            if (numberToColor.TryGetValue(randomColorNumber, out ConsoleColor selectedColor))
+            {
+                return selectedColor;
+            }
+            else
+            {
+                return ConsoleColor.White;
+            }
         }
     }
 }

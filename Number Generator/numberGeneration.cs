@@ -14,7 +14,7 @@ namespace Number_Generator
             Console.WriteLine("Zwischen welchen Zahlen sollte die Nummer generiert werden?");
             Console.WriteLine("Gebe die erste Zahl ein und drücke Enter");
             int rangeNumber1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("wähle die zweite Zahl und bestätige diese wie zuvor");
+            Console.WriteLine("wähle die zweite Zahl wie zuvor");
             int rangeNumber2 = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("es wird eine Zahl zwischen " + rangeNumber1 + " und " + rangeNumber2 + " generiert");
