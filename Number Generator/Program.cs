@@ -8,23 +8,27 @@ using Number_Generator;
 using Microsoft.VisualBasic;
 
 namespace Number_Generator
-{
+{   
     public class programm
     {
         public static void Main(string[] args)
         {
-            
-            StartGame(numberGeneration.Generation());
+            StartGame();    
         }
 
-        public static void StartGame(int Geheimzahl)
+        public static void StartGame()
         {
+            int rangeNumber1 = numberGeneration.Range1();
+            int rangeNumber2 = numberGeneration.Range2(rangeNumber1);
+            int Geheimzahl = numberGeneration.Generation(rangeNumber1, rangeNumber2);
+
             Console.WriteLine("Gebe nun deinen ersten Rateversuch ab und bestätige mit der Enter Taste.");
-            int guessNumber;
+            int guessNumber = 0;
             int loop = 0;
 
             while (loop == 0)
             {
+                
                 try
                 {
                     guessNumber = Convert.ToInt32(Console.ReadLine());
@@ -69,17 +73,26 @@ namespace Number_Generator
 
                             if (Antwort == "Ja")
                             {
-                                StartGame(numberGeneration.Generation());
+                                StartGame();
                             }
                             else if (Antwort == "Nein")
                             {
                                 break;
-                            }
+                            }                           
                         }
                     }
                     else
                     {
-                        if (guessNumber < Geheimzahl)
+                        if (guessNumber > rangeNumber2)
+                        {
+                            Console.WriteLine("Probiere die Zahl in deinem festgelegten Rahmen zu erraten.");
+                        }
+                        if (guessNumber < rangeNumber1)
+                        {
+                            Console.WriteLine("Probiere die Zahl in deinem festgelegten Rahmen zu erraten.");
+                        }
+
+                        if (guessNumber < Geheimzahl && guessNumber < rangeNumber2 || guessNumber < rangeNumber1)
                         {
                             ConsoleColor randomColor = Color.GetRandomConsoleColor();
                             Console.ForegroundColor = randomColor;
@@ -91,7 +104,7 @@ namespace Number_Generator
                             break;
                         }
 
-                        else if (guessNumber > Geheimzahl)
+                        else if (guessNumber > Geheimzahl && guessNumber > rangeNumber2 || guessNumber > rangeNumber1)
                         {
                             ConsoleColor randomColor = Color.GetRandomConsoleColor();
                             Console.ForegroundColor = randomColor;
