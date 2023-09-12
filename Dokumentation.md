@@ -22,3 +22,5 @@ Es wurden keine konkreten Userstories erstellt, somit sind keine Userstory zu de
 | 2  | Programm gestartet| eine Zahl |Zahl wird aufgenommen.|
 | 3  | 1. Zahl wurde eingegeben| Klick auf Tradition| Text über Tradition wird angezeigt.|
 | 4  | Taskleiste ist geöffnet| Klick auf Wettkampfreglement| Wahl für Kumite oder Kata Regeln wird angezeigt.| 
+
+Auswertung: An dem Projetk konnte ich sehr produktiv und konzentriert arbeiten. Manchmal gab es Probleme mit der neu erlernten objektorientierten Programmierung, Diese macht mir noch mühe und konnte ich auch nicht vollständig einsetzen.
