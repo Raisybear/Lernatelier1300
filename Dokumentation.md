@@ -11,7 +11,8 @@ Arebitspakete
 | 5    | 25.08.2023           |Basisstruktur zur Zahlenerratung erstellen  | Elias Spycher |
 | 6    | 25.08.2023           |Eingaben und Ausgaben einfärben  | Elias Spycher |
 | 7    | 01.09.2023           |2. Modus mit Timer erstellen  | Elias Spycher |
-| 8    | 08.09.2023           |Fertigstellen des Codes  | Elias Spycher |
+| 8    | 08.09.2023           |Fertigstellen des Codes und Testen| Elias Spycher |
+| 8    | 08.09.2023           |Portfolio Eintrag schreiben| Elias Spycher |
 
 Es wurden keine konkreten Userstories erstellt, somit sind keine Userstory zu den Testfall Nummern angefügt.
 
