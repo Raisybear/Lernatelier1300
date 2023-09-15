@@ -18,9 +18,18 @@ Es wurden keine konkreten Userstories erstellt, somit sind keine Userstory zu de
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1  | Programm gestartet|-|Man wird begrüsst und bekommt die Interaktion erklärt. Man soll die erste Zahl eingeben |
-| 2  | Programm gestartet| eine Zahl |Zahl wird aufgenommen.|
-| 3  | 1. Zahl wurde eingegeben| Klick auf Tradition| Text über Tradition wird angezeigt.|
-| 4  | Taskleiste ist geöffnet| Klick auf Wettkampfreglement| Wahl für Kumite oder Kata Regeln wird angezeigt.| 
+| 1  | Programm gestartet|-|Man wird begrüsst und bekommt die Interaktion erklärt. Man soll die erste Rangezahl eingeben |
+| 2  | Programm gestartet| 23 |Zahl wird eingelesen.|
+| 3  | Programm gestartet| asdsd |Gebe nur zahlen ein.|
+| 4  | erste Rangezahl eingelesen|-| Man soll die zweite Rangezahl eingeben |
+|5  | erste Rangezahl eingelesen| 728 |Randomzahl wird generiert.|
+|6  | erste Rangezahl eingegeben| asdcewd |Gebe nur zahlen ein.|
+| 7  | Randomzahl generiert| - |Man soll den ersten Rateversuch machen|
+| 8  | Eingelesene Zahl ist kleiner als die zufällige Zahl |-| Die Geheimzahl ist grösser als deine Zahl |
+| 9  | Eingelesene Zahl ist grösser als die zufällige Zahl |-| Die Geheimzahl ist kleiner als deine Zahl |
+| 10  | Eingelesene Zahl ist die zufällige Zahl |-| Du hast die Geheimzahl erraten! |
+| 11 | Eingelesene Zahl ist ausserhalb der Rangezahlen |-| Probiere die Zahl in deinem festgelegten Rahmen zu erraten. |
 
-Auswertung: An dem Projetk konnte ich sehr produktiv und konzentriert arbeiten. Manchmal gab es Probleme mit der neu erlernten objektorientierten Programmierung, Diese macht mir noch mühe und konnte ich auch nicht vollständig einsetzen.
+Ich habe nicht überall alle Fehlerauffangungen notiert, es können keine Spielabstürzenden Fehleingaben gemacht werden ausser wenn die 2. Rangezahl kleiner ist als die 1. Rangezahl
+
+Auswertung: An dem Projetk konnte ich sehr produktiv und konzentriert arbeiten. Manchmal gab es Probleme mit der neu erlernten objektorientierten Programmierung, Diese macht mir noch mühe und konnte ich auch nicht vollständig einsetzen. Ich wurde leider auch nicht vollständig fertig mit dem Projekt und konnte nicht alles implementieren, z.B der 2. Modus musste komplett ausgelassen werden.
