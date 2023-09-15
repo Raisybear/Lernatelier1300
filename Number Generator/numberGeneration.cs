@@ -38,13 +38,13 @@ namespace Number_Guesser
 
         public static int Range2(int rangeNumber1)
         {
-            Console.WriteLine("Gebe die zweite Zahl ein und drücke Enter");
+            
             int rangeNumber2 = 0;
             bool loop2 = true;
             bool loop3 = true;
+            Console.WriteLine("Gebe die zweite Zahl ein und drücke Enter");
 
-
-            while (loop3 == true) ;
+            while (loop3 == true) 
             {
                 
                 while (loop2 == true)
