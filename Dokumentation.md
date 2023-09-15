@@ -20,15 +20,15 @@ Es wurden keine konkreten Userstories erstellt, somit sind keine Userstory zu de
 | ---- | ------------ | ------- | ----------------- |
 | 1  | Programm gestartet|-|Man wird begrüsst und bekommt die Interaktion erklärt. Man soll die erste Rangezahl eingeben |
 | 2  | Programm gestartet| 23 |Zahl wird eingelesen.|
-| 2  | Programm gestartet| asdsd |Gebe nur zahlen ein.|
-| 1  | erste Rangezahl eingelesen|-| Man soll die zweite Rangezahl eingeben |
-| 2  | erste Rangezahl eingelesen| 728 |Randomzahl wird generiert.|
-| 2  | erste Rangezahl eingegeben| asdcewd |Gebe nur zahlen ein.|
-| 2  | Randomzahl generiert| - |Man soll den ersten Rateversuch machen|
-| 3  | Eingelesene Zahl ist kleiner als die zufällige Zahl |-| Die Geheimzahl ist grösser als deine Zahl |
-| 4  | Eingelesene Zahl ist grösser als die zufällige Zahl |-| Die Geheimzahl ist kleiner als deine Zahl |
-| 5  | Eingelesene Zahl ist die zufällige Zahl |-| Du hast die Geheimzahl erraten! |
-| 5  | Eingelesene Zahl ist ausserhalb der Rangezahlen |-| Probiere die Zahl in deinem festgelegten Rahmen zu erraten. |
+| 3  | Programm gestartet| asdsd |Gebe nur zahlen ein.|
+| 4  | erste Rangezahl eingelesen|-| Man soll die zweite Rangezahl eingeben |
+|5  | erste Rangezahl eingelesen| 728 |Randomzahl wird generiert.|
+|6  | erste Rangezahl eingegeben| asdcewd |Gebe nur zahlen ein.|
+| 7  | Randomzahl generiert| - |Man soll den ersten Rateversuch machen|
+| 8  | Eingelesene Zahl ist kleiner als die zufällige Zahl |-| Die Geheimzahl ist grösser als deine Zahl |
+| 9  | Eingelesene Zahl ist grösser als die zufällige Zahl |-| Die Geheimzahl ist kleiner als deine Zahl |
+| 10  | Eingelesene Zahl ist die zufällige Zahl |-| Du hast die Geheimzahl erraten! |
+| 11 | Eingelesene Zahl ist ausserhalb der Rangezahlen |-| Probiere die Zahl in deinem festgelegten Rahmen zu erraten. |
 
 Ich habe nicht überall alle Fehlerauffangungen notiert, es können keine Spielabstürzenden Fehleingaben gemacht werden ausser wenn die 2. Rangezahl kleiner ist als die 1. Rangezahl
 
