@@ -4,10 +4,10 @@ using System.Text;
 using System.Reflection;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
-using Number_Generator;
+using Number_Guesser;
 using Microsoft.VisualBasic;
 
-namespace Number_Generator
+namespace Number_Guesser
 {   
     public class programm
     {

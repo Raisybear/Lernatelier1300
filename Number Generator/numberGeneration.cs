@@ -5,13 +5,13 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Number_Generator
+namespace Number_Guesser
 {
     public class numberGeneration
     {
         public static int Range1()
         {
-            Console.WriteLine("Der Bereich zur Generation der Geheimzahl kannst du selbst bestimmen.");
+            Console.WriteLine("Den Bereich zur Generation der Geheimzahl kannst du selbst bestimmen.");
             Console.WriteLine("Schreibe die kleinere Zahl zuerst und als zweites die grössere Zahl.");
             Console.WriteLine("Gebe nun die erste Zahl ein und drücke Enter");
 

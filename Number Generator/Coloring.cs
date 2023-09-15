@@ -2,7 +2,7 @@
 using System.Text;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
-namespace Number_Generator
+namespace Number_Guesser
 {
     public class Color
     {

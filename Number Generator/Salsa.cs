@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 
 
-namespace Number_Generator
+namespace Number_Guesser
 {
     public class SoundPlayer
     {
